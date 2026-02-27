@@ -1,2 +1,21 @@
 # prognica-python-internship1
 Technical assessment for Python Developer Internship at Prognica Labs – API-based data extraction and analysis tasks.
+# Task 3 – PubMed Article Extractor
+
+## Objective
+Fetch 50 PubMed articles using NCBI E-utilities API for the keyword "oncology biomarkers".
+
+## Implementation
+- Used esearch to retrieve PMIDs
+- Used efetch to retrieve XML metadata
+- Extracted:
+  - PMID
+  - Title
+  - Authors
+  - Abstract
+  - Publication Date
+  - Journal
+- Cleaned whitespace and handled missing values
+
+## Output
+`pubmed_articles.json` contains an array of 50 formatted article objects.
